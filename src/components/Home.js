@@ -1,9 +1,3 @@
-
-
-import Uploader from './Uploader';
-import QueryUploader from './QueryUploader';
-
-
 export default function Home() {
 
     return (

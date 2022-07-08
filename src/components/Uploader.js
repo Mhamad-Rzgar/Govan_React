@@ -107,18 +107,22 @@ export default function Uploader(props) {
                     <div className="card-body">
                         {/* پشاندانی ناو و جۆر و سایزی ئەو فایلەی هەڵمان بژاردووە */}
                         {isFilePicked ? (
-                            <>
-                                <p>Filename: {selectedFile.name}</p>
-                                <p>Filetype: {selectedFile.type}</p>
-                                <p>Size in bytes: {selectedFile.size}</p>
-                            </>
+                            <div className='alert alert-success'>
+                                <p>Filename: <span className="badge badge-pill badge-light text-secondary text-uppercase">{selectedFile.name}</span></p>
+                                <p>Filetype: <span className="badge badge-pill badge-light text-secondary text-uppercase">{selectedFile.type}</span></p>
+                                <p>Size in bytes: <span className="badge badge-pill  badge-light text-secondary">{selectedFile.size / 1000} KB</span></p>
+                            </div>
                         )
                             // ئەگەر هیچ فایلێکمان هەڵنەبژاردنبوو دەڵێت فایلێک هەڵبژێرە بۆ پشاندانی وردەکاریەکەی
                             : (
-                                <p>Select a file to show details</p>
+                                <div className='alert alert-warning'>
+                                    <div className='text-center'>
+                                        Select a file to show details
+                                    </div>
+                                </div>
+                                // <p></p>
                             )
                         }
-
                         <div className="form-group">
                             {/* بەتن و تیكست بۆکسەکەمان خستووەتە ناو بۆکسێکەوە */}
                             <form className='d-flex'>

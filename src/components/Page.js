@@ -1,59 +1,8 @@
-
-
 import Uploader from './Uploader';
 import QueryUploader from './QueryUploader';
-import './Page.css';
 
 
 export default function Page(props) {
-
-    // 
-    // const [endTime, setEndTime] = useState(0);
-    // const [startTime, setStartTime] = useState(0);
-    // const [imageData, setImageData] = useState("");
-
-    // const url = "http://localhost:35220/api/image";
-    // const url = "http://localhost:35220/api/SqlServer";
-
-
-    // ئەمە تیەری سێ رەسمەکە وەرەگرێ لە تیەری دوو 
-    // ناردنی رەسمەکەیە لەڕێگەی ئەی پی ئایەوە
-    // const handleRunQuery = e => {
-    //     e.preventDefault();
-    //     setEndTime(0);
-    //     // setTime({ ...time, sendTime: new Date().getTime() })
-    //     // console.log("set start time");
-    //     setStartTime(new Date().getTime());
-
-    //     // پاکێجی ئاگزیۆسمان بەکارهێناوە لە ناردنی رەسمەکەیا
-    //     axios.get(url)
-    //         .then(function (response) {
-    //             // handle success
-    //             // جوابی ناردنەکە لێرە وەرەگرین کە ئایدی رەسمەکەیە
-    //             setImageData(response.data[0]["imageId"]);
-    //             console.log(response.data[0]["imageId"]);
-    //             setEndTime(new Date().getTime());
-    //         })
-    //         .catch(function (error) {
-    //             // handle error
-    //             console.log("error: " + error);
-    //         })
-    // }
-
-
-
-    // const url = "http://localhost:35220/api/image";
-    // const url = "http://localhost:35220/api/SqlServer";
-    // const pmySqlUrl = "http://127.0.0.1:5000/mysql";
-
-    // const mySqlUrl = "http://localhost:35220/api/image";
-    // const mySqlUrl = "http://127.0.0.1:5000/mysql";
-    // const mySqlUrl = "http://127.0.0.1:5000/access";
-    // const mySqlUrl = "http://127.0.0.1:5000/sqlserver";
-    // const sqlServerUrl = "http://127.0.0.1:5000/sqlserver";
-    // const sqlServerUrl = "http://localhost:35220/api/SqlServer";
-    // const oracleUrl = "";
-    // const msAccessUrl = "http://localhost:35220/api/msAccess";
 
     return (
         <>
