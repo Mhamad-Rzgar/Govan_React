@@ -26,6 +26,7 @@ export default function QueryUploader(props) {
                 setImageData(response.data[0]["imageId"]);
                 setImageName(response.data[0]["imageName"]);
                 console.log(response.data[0]["imageId"]);
+                console.log(response.data[0]["imageData"]);
                 setEndTime(new Date().getTime());
             })
             .catch(function (error) {
